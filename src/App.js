@@ -34,19 +34,22 @@ class App extends React.Component {
   handleChange = event => {
     console.log('App event target:\n', event.target.value)
     this.setState({
-      formValues: event.target.value
+      formValues: event.target.value,
+      user: event.target.value
     })
   }
-//   handleSubmit = (e) => {
-//     e.preventDefault()
-//     fetchUserData(this.state.user)
-//         .then(res => {
-//             this.setState({
-//                 dogImages: res.data.message
-//             })
-//         })
-//         .catch(err => console.log(err))
-// }
+  handleSubmit = (e) => {
+    
+    e.preventDefault()
+    
+    fetchUserData(this.state.user)
+        .then(res => {
+            this.setState({
+                user: res.data
+            })
+        })
+        .catch(err => console.log(err))
+}
   render() {
     return (
       <Wrapper>
@@ -56,7 +59,7 @@ class App extends React.Component {
         </header>
       </div>
       <div>
-        <UserForm onChange={this.handleChange}/>
+        <UserForm onChange={this.handleChange} onSubmit={this.handleSubmit}/>
       </div>
       <div className="users-container">
         <User user={this.state.user}/>

@@ -1,20 +1,15 @@
 import React from 'react';
 
 class UserForm extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         input: ''
-    //     }
-    // }
+
     render() {
         return (
-            <form>
+            <form onSubmit={this.props.onSubmit}>
                 <div>
-                    <input type='text' name='search' onChange={this.props.handleChange} value={this.props.value} />
+                    <input type='text' name='search' onChange={this.props.onChange} value={this.props.value} />
                 </div>
                 <div>
-                    <button>Search Users</button>
+                    <button >Search Users</button>
                 </div>
             </form>
         )
