@@ -1,46 +1,42 @@
 import React from 'react';
 import axios from "axios";
-import './App.css';
 import UserForm from './components/UserForm';
-import styled from "styled-components";
 import User from './components/User';
+import './App.css';
+import styled from "styled-components";
 
 const fetchUserData = (name) => {
   return axios.get(`https://api.github.com/users/${name}`)
-  .then(res => {console.log('SEE ME', res.data)})
+  .then(res =>  res)
   .catch(err => console.log(err))
 }
-
 const fetchFollowersData = (name) => {
   return axios.get(`https://api.github.com/users/${name}/followers`)
   .then(res => res.data)
   .catch(err => console.log(err))
 }
-
-
 class App extends React.Component {
   state ={
     user: 'rickmansfield',
     formValues: '',
     followers: []
   }
-
   componentDidMount(){
     fetchUserData(this.state.user)
     .then(res => {
+      console.log(res);
       this.setState({
-        user: "blah"
+        user: res.data
+
       })
     })
   }
-
   handleChange = event => {
     console.log('App event target:\n', event.target.value)
     this.setState({
-      currentUser: event.target.value
+      formValues: event.target.value
     })
   }
-
 //   handleSubmit = (e) => {
 //     e.preventDefault()
 //     fetchUserData(this.state.user)
@@ -51,7 +47,6 @@ class App extends React.Component {
 //         })
 //         .catch(err => console.log(err))
 // }
-
   render() {
     return (
       <Wrapper>
@@ -65,7 +60,6 @@ class App extends React.Component {
       </div>
       <div className="users-container">
         <User user={this.state.user}/>
-
       </div>
       </Wrapper>
     )
