@@ -25,10 +25,11 @@ class App extends React.Component {
     fetchUserData(this.state.user)
     .then(res => {
       console.log(res);
-      this.setState({
-        user: res.data
-
-      })
+      this.setState({user: res.data})
+    })
+    fetchFollowersData(this.state.user)
+    .then(res =>{
+      this.setState({followers: res.data})
     })
   }
   handleChange = event => {
