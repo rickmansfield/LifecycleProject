@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -70,7 +69,7 @@ body {
   align-items: center;
 }
 
-.header {
+.App-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -78,12 +77,12 @@ body {
   margin-bottom: 50px;
 }
 
-.header img {
+.App-header img {
   width: 150px;
   height: 150px;
 }
 
-.header p {
+.App-header p {
   font-size: 48px;
 }
 
