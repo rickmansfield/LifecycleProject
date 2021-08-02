@@ -3,6 +3,7 @@ import axios from "axios";
 import './App.css';
 import UserForm from './components/UserForm';
 import styled from "styled-components";
+import User from './components/User';
 
 const fetchUserData = (name) => {
   return axios.get(`https://api.github.com/users/${name}`)
@@ -19,13 +20,13 @@ const fetchFollowersData = (name) => {
 
 class App extends React.Component {
   state ={
-    currentUser: 'rickmansfield',
+    user: 'rickmansfield',
     formValues: '',
     followers: []
   }
 
   componentDidMount(){
-    fetchUserData(this.state.currentUser)
+    fetchUserData(this.state.user)
     .then(res => {
       this.setState({
         user: "blah"
@@ -60,7 +61,10 @@ class App extends React.Component {
         </header>
       </div>
       <div>
-        <UserForm onSubmit={this.handSubmit} onChange={this.handleChange}/>
+        <UserForm onChange={this.handleChange}/>
+      </div>
+      <div className="users-container">
+        <User user={this.state.user}/>
 
       </div>
       </Wrapper>
