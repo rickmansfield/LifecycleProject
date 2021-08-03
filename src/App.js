@@ -74,7 +74,7 @@ class App extends React.Component {
         <div className="users-container">
           <User user={this.state.user} />
         </div>
-        <div>
+        <div className='followers'>
           <h2>Followers</h2>
           <Followers followers={this.state.followers} />
         </div>

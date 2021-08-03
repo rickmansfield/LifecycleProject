@@ -1,5 +1,6 @@
 import React from 'react';
 import FollowersCard from './FollowersCard'
+
 class Followers extends React.Component {
 
     render() {
