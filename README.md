@@ -17,6 +17,10 @@ This project allows you to practice the concepts and techniques learned in this 
     - [Task 3: Stretch Problems](#task-3-stretch-problems)
   - [Submission Format](#submission-format)
   - [Rick Mansfield's PUll Request Link](#rick-mansfields-pull-request-link)
+  - [Resources](#resources)
+    - [Module Materials:](#module-materials)
+  - [Key Terminology:](#key-terminology)
+    - [Class Based Component Tutorial](#class-based-component-tutorial)
 ## Introduction
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
@@ -100,3 +104,23 @@ After finishing your required elements, you can push your work further. These go
 
 ## Rick Mansfield's PUll Request Link
 - [Link for Convenience](https://github.com/LambdaSchool/web-module-project-lifecycle/pull/91)
+
+
+## Resources
+
+### Module Materials:
+- Module Project : https://github.com/LambdaSchool/web-module-project-lifecycle 
+- GP Slides : https://docs.google.com/presentation/d/1XMqnuxSv2qh1vWfvV-AvqtVZmaZOYP1llu0RrbbHEwo/edit?usp=sharing 
+- Yesterday’s Module Project Review:https://www.loom.com/share/f856074dad7b4b75af2c8463f7bd8fabPW: eX51kj
+- Alternative Lecture [Video:Dustin Myers|Josh Jacobson|Warren C. Longmire|Brian Kirkby](https://youtu.be/YGPOda5hPm0)
+## Key Terminology:
+- ComponentDidMount - [The React.Component derived method that is triggered after a component initially mounts.](https://linguinecode.com/post/understanding-react-componentdidmount)
+- ComponentDidUpdate - [The React.Component derived method that is triggered any time a component update props or state.](https://dev.to/cesareferrari/how-to-use-componentdidupdate-in-react-30en)
+- ComponentWillUnmount - [The React.Component derived method that is triggered when a component is removed from the DOM.
+Key Concepts:](https://learn.co/lessons/react-component-mounting-and-unmounting)
+- React Lifecycle - [The overall flow of code execution throughout the birth, operation and death of a React component.
+Stretch Tutorial:](https://medium.com/how-to-react/react-life-cycle-methods-with-examples-2bdb7465332b)
+Head-to-Toe Class based Component Tutorial
+
+### Class Based Component Tutorial
+  [Link](https://medium.com/bb-tutorials-and-thoughts/react-understanding-component-lifecycle-methods-1aaa32b33047)
