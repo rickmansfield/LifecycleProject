@@ -21,6 +21,7 @@ This project allows you to practice the concepts and techniques learned in this 
     - [Module Materials:](#module-materials)
   - [Key Terminology:](#key-terminology)
     - [Class Based Component Tutorial](#class-based-component-tutorial)
+    - [More On FETCH used in APP.js](#more-on-fetch-used-in-appjs)
 ## Introduction
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
@@ -124,3 +125,7 @@ Head-to-Toe Class based Component Tutorial
 
 ### Class Based Component Tutorial
   [Link](https://medium.com/bb-tutorials-and-thoughts/react-understanding-component-lifecycle-methods-1aaa32b33047)
+
+  ### More On FETCH used in APP.js
+  - [Link to Warren's Video](https://lambdaschool.enterprise.slack.com/files/W01B388BS9E/F029WL8LR4N/zoom_0.mp4)
+  - [also at](src/media/zoom_0.mp4) 
