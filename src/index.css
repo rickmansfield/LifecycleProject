@@ -82,14 +82,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-}
 .App-header {
   background-color: #282c34;
   min-height: 10vh;
@@ -100,6 +92,15 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 
 .header img {
   width: 150px;
